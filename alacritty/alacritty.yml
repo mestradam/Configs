@@ -1,0 +1,122 @@
+window:
+  dimensions:
+    columns: 88
+    lines: 46
+  position:
+    x: 0
+    y: 0
+  padding:
+    x: 2
+    y: 2
+  dynamic_padding: false
+  decorations: full
+
+scrolling:
+  history: 10000
+  multiplier: 3
+
+font:
+  normal:
+    family: "FuraCode Nerd Font"
+    style: Regular
+  bold:
+    family: "FuraCode Nerd Font"
+    style: Bold
+  italic:
+    family: "FuraCode Nerd Font"
+    style: Italic
+  size: 11.5
+
+# PaperColor theme light
+# colors: 
+#   cursor:
+#     text: '0x222222'
+#     cursor: '0xff00ff'
+#   primary:
+#     background: '0xeeeeee'
+#     foreground: '0x4d4d4c'
+#   normal:
+#     black:   '0xededed'
+#     red:     '0xd7005f'
+#     green:   '0x718c00'
+#     yellow:  '0xd75f00'
+#     blue:    '0x4271ae'
+#     magenta: '0x8959a8'
+#     cyan:    '0x3e999f'
+#     white:   '0x4d4d4c'
+#   bright:
+#     black:   '0x949494'
+#     red:     '0xd7005f'
+#     green:   '0x718c00'
+#     yellow:  '0xd75f00'
+#     blue:    '0x4271ae'
+#     magenta: '0x8959a8'
+#     cyan:    '0x3e999f'
+#     white:   '0xf5f5f5'
+
+colors: 
+  cursor:
+    text: '0x222222'
+    cursor: '0xff00ff'
+  primary:
+    background: '0x1e2127'
+    foreground: '0xabb2bf'
+    bright_foreground: '0xe6efff'
+  normal:
+    black:   '0x1e2127'
+    red:     '0xe06c75'
+    green:   '0x98c379'
+    yellow:  '0xd19a66'
+    blue:    '0x61afef'
+    magenta: '0xc678dd'
+    cyan:    '0x56b6c2'
+    white:   '0x828791'
+  bright:
+    black:   '0x5c6370'
+    red:     '0xe06c75'
+    green:   '0x98c379'
+    yellow:  '0xd19a66'
+    blue:    '0x61afef'
+    magenta: '0xc678dd'
+    cyan:    '0x56b6c2'
+    white:   '0xe6efff'
+  dim:
+    black:   '0x1e2127'
+    red:     '0xe06c75'
+    green:   '0x98c379'
+    yellow:  '0xd19a66'
+    blue:    '0x61afef'
+    magenta: '0xc678dd'
+    cyan:    '0x56b6c2'
+    white:   '0x828791'
+
+# colors:
+#   primary:
+#     background: '0x1d1f21'
+#     foreground: '0xc5c8c6'
+#   normal:
+#     black:   '0x1d1f21'
+#     red:     '0xcc6666'
+#     green:   '0xb5bd68'
+#     yellow:  '0xf0c674'
+#     blue:    '0x81a2be'
+#     magenta: '0xb294bb'
+#     cyan:    '0x8abeb7'
+#     white:   '0xc5c8c6'
+#   bright:
+#     black:   '0x969896'
+#     red:     '0xcc6666'
+#     green:   '0xb5bd68'
+#     yellow:  '0xf0c674'
+#     blue:    '0x81a2be'
+#     magenta: '0xb294bb'
+#     cyan:    '0x8abeb7'
+#     white:   '0xffffff'
+#   cursor:
+#     foreground: "#222222"
+#     background: "#ff00ff"
+
+bell:
+  animation: EaseOutExpo
+  duration: 0
+  color: "#ffffff"
