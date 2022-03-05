@@ -1,4 +1,4 @@
-# personal-configs
+# Configs
 
 Archivos de configuración personales
 
