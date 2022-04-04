@@ -27,3 +27,31 @@ Poner el archivo `alacritty.yml` en la carpeta `~/.config/alacritty/`
 ## Emacs
 
 Poner el archivo `init.el` en la carpeta `~/.emacs.d/`
+
+
+## Terminal prompt
+
+Poner en `~/.bashrc`
+
+```
+if [[ ${EUID} == 0 ]] ; then
+    PS1='\[\033[01;31m\] \W > '
+else
+    PS1='\[\033[01;32m\] \W > '
+fi
+```
+
+## Tmux
+
+Poner el archivo `.tmux.config` en la carpeta `~/`
+
+## fzf
+
+Después de instalar, agregar lo siguiente al final de `~/.bashrc`
+
+```
+# source tmux extra keybindings
+
+source /usr/share/fzf/key-bindings.bash
+source /usr/share/fzf/completion.bash
+```

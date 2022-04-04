@@ -26,7 +26,6 @@ require('packer').startup(function()
   use { 'wbthomason/packer.nvim' } -- Package manager
 
   use { 'rakr/vim-one' } -- tema de colores one (dark/light)
-  use { 'sainnhe/everforest' }
 
   use { 'kyazdani42/nvim-web-devicons' } -- mejores íconos
   use { 'kyazdani42/nvim-tree.lua' } -- arbol de archivos
@@ -40,8 +39,8 @@ require('packer').startup(function()
 
   use { 'akinsho/toggleterm.nvim' } -- abrir/cerrar terminal
 
-  use { 'neovim/nvim-lspconfig' } -- colores syntaxis, completar, etc.
-  use { 'hrsh7th/nvim-compe' } -- autocompletar
+  -- use { 'neovim/nvim-lspconfig' } -- colores syntaxis, completar, etc.
+  -- use { 'hrsh7th/nvim-compe' } -- autocompletar
 
 --   use { 'L3MON4D3/LuaSnip' } -- Snippets plugin
 --   use { 'saadparwaiz1/cmp_luasnip' } -- snippets com cmp
@@ -51,6 +50,7 @@ end)
 
 -- activar y configurar paquetes
 vim.opt.termguicolors = true
+set.background = 'light'
 vim.cmd('colorscheme one')
 
 require('lualine').setup{}

@@ -13,7 +13,7 @@
 (set-fringe-mode 3)                     ; Margen 3 pixeles
 
 ;; (set-face-attribute 'default nil :height 100)
-(set-face-attribute 'default nil :font "Fira Code Light" :height 110) ; fuente
+(set-face-attribute 'default nil :font "Source Code Pro" :height 110) ; fuente
 (load-theme 'wombat)                    ; Tema de colores
 (set-cursor-color "#ff00ff")            ; Color del cursor
 
