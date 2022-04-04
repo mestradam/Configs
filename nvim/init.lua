@@ -17,35 +17,37 @@ local opts = { noremap = true, silent = true }
 -- instalar packer
 local install_path = vim.fn.stdpath 'data' .. '/site/pack/packer/start/packer.nvim'
 if vim.fn.empty(vim.fn.glob(install_path)) > 0 then
-  vim.fn.execute('!git clone https://github.com/wbthomason/packer.nvim ' .. install_path)
+    vim.fn.execute('!git clone https://github.com/wbthomason/packer.nvim ' .. install_path)
 end
 
 -- instalar paquetes
 local use = require('packer').use
 require('packer').startup(function()
-  use { 'wbthomason/packer.nvim' } -- Package manager
+    use { 'wbthomason/packer.nvim' } -- Package manager
 
-  use { 'rakr/vim-one' } -- tema de colores one (dark/light)
+    use { 'rakr/vim-one' } -- tema de colores one (dark/light)
 
-  use { 'kyazdani42/nvim-web-devicons' } -- mejores íconos
-  use { 'kyazdani42/nvim-tree.lua' } -- arbol de archivos
-  use { 'nvim-lualine/lualine.nvim' } -- barra de estátus e información
-  use { 'lukas-reineke/indent-blankline.nvim' } -- ayuda líneas indentadas
+    use { 'kyazdani42/nvim-web-devicons' } -- mejores íconos
+    use { 'kyazdani42/nvim-tree.lua' } -- arbol de archivos
+    use { 'nvim-lualine/lualine.nvim' } -- barra de estátus e información
+    use { 'lukas-reineke/indent-blankline.nvim' } -- ayuda líneas indentadas
 
-  use { 'nvim-lua/plenary.nvim' } -- algunas funciones necesarias para varios paquetes
-  use { "terrortylor/nvim-comment" } -- comentar/descomentar
-  use { 'nvim-treesitter/nvim-treesitter' } -- mejor coloreado
-  use { 'nvim-telescope/telescope.nvim' } -- fuzzy finder
+    use { 'nvim-lua/plenary.nvim' } -- algunas funciones necesarias para varios paquetes
+    use { "terrortylor/nvim-comment" } -- comentar/descomentar
+    use { 'nvim-treesitter/nvim-treesitter' } -- mejor coloreado
+    use { 'nvim-telescope/telescope.nvim' } -- fuzzy finder
 
-  use { 'akinsho/toggleterm.nvim' } -- abrir/cerrar terminal
+    use { "folke/which-key.nvim" } -- ayuda para comandos
 
-  -- use { 'neovim/nvim-lspconfig' } -- colores syntaxis, completar, etc.
-  -- use { 'hrsh7th/nvim-compe' } -- autocompletar
+    use { 'akinsho/toggleterm.nvim' } -- abrir/cerrar terminal
 
---   use { 'L3MON4D3/LuaSnip' } -- Snippets plugin
---   use { 'saadparwaiz1/cmp_luasnip' } -- snippets com cmp
+    -- use { 'neovim/nvim-lspconfig' } -- colores syntaxis, completar, etc.
+    -- use { 'hrsh7th/nvim-compe' } -- autocompletar
 
-  use { 'lewis6991/gitsigns.nvim' } -- cambios git repo
+    --   use { 'L3MON4D3/LuaSnip' } -- Snippets plugin
+    --   use { 'saadparwaiz1/cmp_luasnip' } -- snippets com cmp
+
+    use { 'lewis6991/gitsigns.nvim' } -- cambios git repo
 end)
 
 -- activar y configurar paquetes
@@ -58,19 +60,20 @@ require('nvim_comment').setup{comment_empty = false}
 require('nvim-treesitter.configs').setup{ ensure_installed = "maintained", highlight = { enable = true } }
 require('indent_blankline').setup{ buftype_exclude = {"terminal"} }
 require('nvim-tree').setup{}
+require("which-key").setup {}
 
 require('gitsigns').setup{
-  signs = {
-    add          = {hl = 'GitSignsAdd'   , text = '│', numhl='GitSignsAddNr'   , linehl='GitSignsAddLn'},
-    change       = {hl = 'GitSignsChange', text = '│', numhl='GitSignsChangeNr', linehl='GitSignsChangeLn'},
-    delete       = {hl = 'GitSignsDelete', text = '│', numhl='GitSignsDeleteNr', linehl='GitSignsDeleteLn'},
-    topdelete    = {hl = 'GitSignsDelete', text = '│', numhl='GitSignsDeleteNr', linehl='GitSignsDeleteLn'},
-    changedelete = {hl = 'GitSignsChange', text = '│', numhl='GitSignsChangeNr', linehl='GitSignsChangeLn'},
-  },
-  signcolumn = true,  -- Toggle with `:Gitsigns toggle_signs`
-  numhl      = false, -- Toggle with `:Gitsigns toggle_numhl`
-  linehl     = false, -- Toggle with `:Gitsigns toggle_linehl`
-  word_diff  = false, -- Toggle with `:Gitsigns toggle_word_diff`
+	signs = {
+		add          = {hl = 'GitSignsAdd'   , text = '│', numhl='GitSignsAddNr'   , linehl='GitSignsAddLn'},
+		change       = {hl = 'GitSignsChange', text = '│', numhl='GitSignsChangeNr', linehl='GitSignsChangeLn'},
+		delete       = {hl = 'GitSignsDelete', text = '│', numhl='GitSignsDeleteNr', linehl='GitSignsDeleteLn'},
+		topdelete    = {hl = 'GitSignsDelete', text = '│', numhl='GitSignsDeleteNr', linehl='GitSignsDeleteLn'},
+		changedelete = {hl = 'GitSignsChange', text = '│', numhl='GitSignsChangeNr', linehl='GitSignsChangeLn'},
+	},
+	signcolumn = true,  -- Toggle with `:Gitsigns toggle_signs`
+	numhl      = false, -- Toggle with `:Gitsigns toggle_numhl`
+	linehl     = false, -- Toggle with `:Gitsigns toggle_linehl`
+	word_diff  = false, -- Toggle with `:Gitsigns toggle_word_diff`
 }
 
 -- }}}
@@ -96,9 +99,9 @@ set.wrap = true
 set.linebreak = true
 set.breakindent = true
 -- tabulaciones (indentación)
-set.tabstop = 2
-set.shiftwidth = 2
-set.softtabstop = 2
+set.tabstop = 4
+set.shiftwidth = 4
+set.softtabstop = 4
 set.expandtab = true
 -- búsqueda de palabras
 set.ignorecase = true

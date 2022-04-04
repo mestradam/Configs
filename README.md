@@ -45,6 +45,8 @@ fi
 
 Poner el archivo `.tmux.config` en la carpeta `~/`
 
+Instalar el administrador de plugins `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
+
 ## fzf
 
 Después de instalar, agregar lo siguiente al final de `~/.bashrc`
