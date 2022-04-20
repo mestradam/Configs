@@ -203,7 +203,9 @@ map('n', '<leader>lp', ':! pdflatex %<CR>', opts) -- latex: compilar pdflatex
 map('n', '<leader>lu', ':! lualatex %<CR>', opts) -- latex: compilar lualatex
 map('n', '<leader>lb', ':! biber %:r<CR>', opts) -- latex: compilar biber
 map('n', '<leader>lr', ':! rm *.aux *.bbl *.bcf *.blg *.log *.nav *.out *.run.xml *.snm *.toc *.vrb && disown <CR><CR>', opts) -- latex: borrar aux
-map('n', '<leader>lv', ':! zathura %:r.pdf && disown <CR><CR>', opts) -- latex: visualizar en zathura
+map('n', '<leader>lv', ':! qpdfview %:r.pdf && disown <CR><CR>', opts) -- latex: visualizar en qpdfview
+-- map('n', '<leader>lv', ':! okular %:r.pdf && disown <CR><CR>', opts) -- latex: visualizar en okular
+-- map('n', '<leader>lv', ':! zathura %:r.pdf && disown <CR><CR>', opts) -- latex: visualizar en zathura
 
 -- }}}
 

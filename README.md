@@ -52,10 +52,10 @@ ln ~/Documents/Configs/emacs/init.el ~/.emacs.d/
 
 Instalar el administrador de plugins `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
 
-Poner el archivo `.tmux.config` en la carpeta `~/`
+Poner el archivo `.tmux.conf` en la carpeta `~/`
 
 ```
-ln ~/Documents/Configs/tmux/tmux.config ~/.tmux.config
+ln ~/Documents/Configs/tmux/tmux.conf ~/.tmux.conf
 ```
 
 

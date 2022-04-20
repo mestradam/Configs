@@ -6,8 +6,8 @@ window:
     x: 0
     y: 0
   padding:
-    x: 2
-    y: 2
+    x: 1
+    y: 1
   dynamic_padding: false
   decorations: full
 
@@ -18,13 +18,13 @@ scrolling:
 font:
   normal:
     family: "Source Code Pro"
-    style: Regular
+    style: Medium
   bold:
     family: "Source Code Pro"
     style: Bold
   italic:
     family: "Source Code Pro"
-    style: Italic
+    style: "Medium Italic"
   size: 11.5
 
 # PaperColor theme light
